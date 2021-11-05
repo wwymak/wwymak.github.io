@@ -1,9 +1,10 @@
-baseurl = "https://wwymak.gitlab.io"
+baseurl = "https://wwymak.github.io/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 title = "Wendy's blog"
 canonifyurls  = true
+Copyright = "© Wendy Mak 2021"
 
 DefaultContentLanguage = "en"
 theme = "beautifulhugo"
@@ -23,7 +24,7 @@ pygmentCodeFences = true
   ShowPostNavLinks = true
 
 [Params.EditPost]
-  url = "https://gitlab.com/kalikiana/kalikiana.gitlab.io/-/blob/master/content/"
+  url = "https://github.com/wwymak/wwymak.github.io/-/blob/master/content/"
   text = "Suggest Changes"
   appendFilePath = true
 
