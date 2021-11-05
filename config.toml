@@ -1,0 +1,57 @@
+baseurl = "https://wwymak.gitlab.io"
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+title = "Wendy's blog"
+canonifyurls  = true
+
+DefaultContentLanguage = "en"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+
+[Params]
+  subtitle = "Anything goes that captures my interest :) "
+  dateFormat = "2021-11-05"
+  commit = false
+  rss = true
+  comments = true
+  author = "Wendy Mak"
+  ShowReadingTime = true
+  # XXX: ShowShareButtons = true
+  ShowPostNavLinks = true
+
+[Params.EditPost]
+  url = "https://gitlab.com/kalikiana/kalikiana.gitlab.io/-/blob/master/content/"
+  text = "Suggest Changes"
+  appendFilePath = true
+
+[Params.Assets]
+  favicon = "avatar.png"
+
+[Params.HomeInfoParams]
+  Title = ""
+  Content = "Thoughts, summaries around data science, software stuff, and other random bits and pieces of knowledge I come across"
+[[Params.SocialIcons]]
+  name = "github"
+  url = "https://github.com/wwymak"
+[[Params.SocialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/wwymak"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
+
