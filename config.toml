@@ -2,25 +2,25 @@ baseurl = "https://wwymak.github.io/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Wendy's blog"
+# title = "The number mill"
 canonifyurls  = true
-Copyright = "© Wendy Mak 2021"
+site.Copyright = "© Wendy Mak 2021"
 
 DefaultContentLanguage = "en"
-theme = "beautifulhugo"
+theme = "PaperMod"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 
 [Params]
   subtitle = "Anything goes that captures my interest :) "
-  dateFormat = "2021-11-05"
+  dateFormat = "January 2, 2006"
   commit = false
   rss = true
   comments = true
   author = "Wendy Mak"
   ShowReadingTime = true
-  # XXX: ShowShareButtons = true
+#   ShowShareButtons = true
   ShowPostNavLinks = true
 
 [Params.EditPost]
@@ -32,7 +32,7 @@ pygmentCodeFences = true
   favicon = "avatar.png"
 
 [Params.HomeInfoParams]
-  Title = ""
+  title = "The number mill"
   Content = "Thoughts, summaries around data science, software stuff, and other random bits and pieces of knowledge I come across"
 [[Params.SocialIcons]]
   name = "github"
