@@ -14,16 +14,16 @@ Create a new repo with the name `<username>.github.io`. For now, best to keep th
 - Next, create a new site with hugo on your local machine with `hugo new site <username>.github.io` -- this will set up a new folder on your machine with name  <username>.github.io (you can use whatever name you want for the folder, but I find it a bit easier to make sure repo names always agree with folder names).
 - init the folder with git and add the remote as origin (`cd <username>.github.io && git init && git remote add origin git@github.com:<username>/<username>.github.io.git`)
 - add a theme-- there's some to select from https://themes.gohugo.io/. Pick one you like, and install it (e.g. `git submodule add xxxxx`)
-- customize your site config.toml file (there are theme specific stuff options that the theme would have documented, for more details on my customizations I will mention that later)
+- customize your site config.toml file (there are theme specific stuff options that the theme would have documented, the base hugo ones are [here](https://gohugo.io/getting-started/configuration/))
 
 ### 3. Setup github actions to automatically deploy your blog
-In the top level, add a `.github` folder and a `workflows` folder inside -- this will store the yaml files that defines tasks github should run when there are updates to the code. Here, I am using two handy github actions: https://github.com/peaceiris/actions-gh-pages and https://github.com/peaceiris/actions-hugo. 
+In the top level, add a `.github` folder and a `workflows` folder inside -- this will store the yaml files that defines tasks github should run when there are updates to the code. Here, I am using two handy github actions: https://github.com/peaceiris/actions-gh-pages and https://github.com/peaceiris/actions-hugo. (there are other interesting things you can do with github actions-- more info from the [official docs](https://docs.github.com/en/actions))
 
 My page deploy workflow is as follows
 
 ```yaml
 name: hugo publish
-
+# deploy only on publish to main branch
 on:
   push:
     branches:
@@ -73,5 +73,7 @@ Once you've push to the `main` branch, the gh pages actions we set up earlier wi
 
 
 ### Tips
+- to create a new post, use `hugo new blog_post_name.md` -- this  will automatically create the correct file under `/content` for your blog
+- remember to change checkt the `draft: ` section in the header-- if this is set to `true` the default is for Hugo not to render it
 - if you want to use emojis, you need to set `enableEmoji = true` in your hugo config file
 - for images, you should put them under the `static` folder, and reference them as `![](image_filename.png)`

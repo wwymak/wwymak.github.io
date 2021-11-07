@@ -12,6 +12,7 @@ metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 enableEmoji = true
+enableGitInfo = true
 
 [Params]
   subtitle = "Anything goes that captures my interest :) "
@@ -47,10 +48,10 @@ enableEmoji = true
     url = ""
     weight = 1
 
-[[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
+# [[menu.main]]
+#     name = "About"
+#     url = "page/about/"
+#     weight = 3
 
 [[menu.main]]
     name = "Tags"
