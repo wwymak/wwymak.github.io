@@ -14,6 +14,14 @@ pygmentCodeFences = true
 enableEmoji = true
 enableGitInfo = true
 
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
+  
+
 [Params]
   subtitle = "Anything goes that captures my interest :) "
   dateFormat = "January 2, 2006"
@@ -26,7 +34,7 @@ enableGitInfo = true
   ShowPostNavLinks = true
 
 [Params.EditPost]
-  url = "https://github.com/wwymak/wwymak.github.io/-/blob/master/content/"
+  url = "https://github.com/wwymak/wwymak.github.io/tree/main/content/"
   text = "Suggest Changes"
   appendFilePath = true
 
@@ -57,4 +65,5 @@ enableGitInfo = true
     name = "Tags"
     url = "tags"
     weight = 3
+
 
