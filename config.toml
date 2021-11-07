@@ -1,4 +1,4 @@
-baseurl = "https://wwymak.github.io/"
+baseurl = "https://www.thenumbermill.co.uk"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
@@ -20,7 +20,7 @@ enableGitInfo = true
   expiryDate = ['expiryDate']
   lastmod = [':git', 'lastmod', 'date', 'publishDate']
   publishDate = ['publishDate', 'date']
-  
+
 
 [Params]
   subtitle = "Anything goes that captures my interest :) "
