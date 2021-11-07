@@ -77,3 +77,4 @@ Once you've push to the `main` branch, the gh pages actions we set up earlier wi
 - remember to change checkt the `draft: ` section in the header-- if this is set to `true` the default is for Hugo not to render it
 - if you want to use emojis, you need to set `enableEmoji = true` in your hugo config file
 - for images, you should put them under the `static` folder, and reference them as `![](image_filename.png)`
+- if you want to set up the blog on a custom domain like I've done here, there are some additional steps to do on both github and your domain name provider-- I will document this in a future post
