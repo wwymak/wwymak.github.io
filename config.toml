@@ -11,6 +11,7 @@ theme = "PaperMod"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
+enableEmoji = true
 
 [Params]
   subtitle = "Anything goes that captures my interest :) "
