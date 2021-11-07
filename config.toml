@@ -14,6 +14,9 @@ pygmentCodeFences = true
 enableEmoji = true
 enableGitInfo = true
 
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
 
 [frontmatter]
   date = ['date', 'publishDate', 'lastmod']
@@ -30,8 +33,9 @@ enableGitInfo = true
   comments = true
   author = "Wendy Mak"
   ShowReadingTime = true
-#   ShowShareButtons = true
+  ShowShareButtons = true
   ShowPostNavLinks = true
+  ShowBreadCrumbs = true
 
 [Params.EditPost]
   url = "https://github.com/wwymak/wwymak.github.io/tree/main/content/"
@@ -41,9 +45,16 @@ enableGitInfo = true
 [Params.Assets]
   favicon = "avatar.png"
 
+# [Params.ProfileMode]
+#   enabled = true
+#   title = "The number mill"
+#   subtitle = "Thoughts, summaries around data science, software stuff, and other random bits and pieces of knowledge I come across"
+#   imageUrl = "avatar.png"
+
 [Params.HomeInfoParams]
   title = "The number mill"
   Content = "Thoughts, summaries around data science, software stuff, and other random bits and pieces of knowledge I come across"
+
 [[Params.SocialIcons]]
   name = "github"
   url = "https://github.com/wwymak"
@@ -56,10 +67,10 @@ enableGitInfo = true
     url = ""
     weight = 1
 
-# [[menu.main]]
-#     name = "About"
-#     url = "page/about/"
-#     weight = 3
+[[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 3
 
 [[menu.main]]
     name = "Tags"
