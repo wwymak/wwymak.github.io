@@ -1,0 +1,1 @@
+This is the code behind my blog at https://www.thenumbermill.co.uk/ -- a static site generated with Hugo. Posts can be found under content/posts. If you have an idea you want me to write about, feel free to add it as an issue
