@@ -2,6 +2,7 @@
 title: "Blog Setup With Hugo and Github Pages"
 date: 2021-11-05T21:54:32Z
 draft: false
+tags: ["hugo", "github actions", "blogging"]
 ---
 
 So, I've decided to revamp my blog, and rather than going with medium, thought that it's a bit nicer to use my own site as the content remains under my control and I can use markdown. Github has a good set of documentation on [setting up a github page](https://docs.github.com/en/pages), but as I am using [Hugo](https://gohugo.io/) as the static site generator, there are a few extra things I need to add. These are the steps I used to get it all up and running. Maybe someone will find them useful, if not, they'll remind me in the future :angel:
