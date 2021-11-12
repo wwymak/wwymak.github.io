@@ -10,6 +10,9 @@ In BigQuery, there is the concept of [repeated fields and arrays](https://medium
 
 Suppose we have some data around freemium podcast platform. In this platform users can pay for an upgraded service, or listen for free. The users can pay in multiple different ways (e.g. they might subscribe to only certain podcasts, or pay for a 'everything' service). In this first scenario, we have a `Users` table, with various information about them, the most relevant being `user_id` (of type string) and `subscriptions` (repeated array of strings corresponding to names of podcasts or `unlimited`), and we would like to count users who can access the subscribers only content on the podcasts `science weekly` and `magic101`.
 
+This can be done as follows:
+
+
 ```sql
 WITH EligibilityCounts AS (
     SELECT
