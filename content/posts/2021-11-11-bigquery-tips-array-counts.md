@@ -1,7 +1,7 @@
 ---
 title: "How to count occurences in Bigquery Array/Repeated Fields"
 date: 2021-11-11T21:01:23Z
-draft: true
+draft: false
 tags: ["bigquery", "sql", "cheatsheet"]
 ---
 
