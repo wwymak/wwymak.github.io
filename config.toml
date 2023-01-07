@@ -1,10 +1,10 @@
-baseurl = "https://www.thenumbermill.co.uk"
+baseurl = "https://wwymak.github.io"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 # title = "The number mill"
 canonifyurls  = true
-site.Copyright = "© Wendy Mak 2021"
+site.Copyright = "© Wendy Mak 2023"
 
 DefaultContentLanguage = "en"
 theme = "PaperMod"
