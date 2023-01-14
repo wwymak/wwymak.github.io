@@ -30,4 +30,3 @@ jobs:
         publish_dir: ./public
         emptyCommits: true
         commitMessage: ${{ github.event.head_commit.message }}
-        cname: www.thenumbermill.co.uk
