@@ -1,1 +1,1 @@
-This is the code behind my blog at https://github.com/wwymak/wwymak.github.io/ -- a static site generated with Hugo. Markdown files for posts can be found under content/posts. If you have an idea you want me to write about, feel free to add it as an issue
+This is the code behind my blog at https://wwymak.github.io/ -- a static site generated with Hugo. Markdown files for posts can be found under content/posts. If you have an idea you want me to write about, feel free to add it as an issue
