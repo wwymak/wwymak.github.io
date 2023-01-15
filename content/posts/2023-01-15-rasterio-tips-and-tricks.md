@@ -1,6 +1,6 @@
 ---
 title: "Geo raster data parsing with rasterio"
-date: 2023-01-15T20:54:32Z
+date: 2023-01-14T18:54:32Z
 draft: false
 tags: ["python", "geospatial", "rasterio"]
 ---
