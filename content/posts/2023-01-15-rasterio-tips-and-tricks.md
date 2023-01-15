@@ -1,3 +1,10 @@
+---
+title: "Geo raster data parsing with rasterio"
+date: 2023-01-15T20:54:32Z
+draft: false
+tags: ["python", "geospatial", "rasterio"]
+---
+
 There are two main ways geospatial data are stored
 - rasters, where each 'pixel' stores data values. This corresponds to files such as geotiffs.
 - vectors, where information is stored more like a table form, and each row will have a 'geometry' field which stores information that allows you to recreate a geographical feature, such as a point , a polygon etc. It might also store the coordinate reference system so you can correctly place the shapes on a map
