@@ -68,6 +68,11 @@ home = [ "HTML", "RSS", "JSON" ]
     weight = 1
 
 [[menu.main]]
+    name = "Bakery"
+    url = "/bakery"
+    weight = 2
+
+[[menu.main]]
     name = "Search"
     url = "/search/"
     weight = 3
