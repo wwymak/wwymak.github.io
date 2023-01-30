@@ -157,51 +157,13 @@ output_dataframe = pd.DataFrame(
 )
 output_dataframe.sample(frac=1.).head()
 ```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>lat</th>
-      <th>lng</th>
-      <th>population</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>6506</th>
-      <td>53.5</td>
-      <td>124.5</td>
-      <td>9.351563e+03</td>
-    </tr>
-    <tr>
-      <th>1035</th>
-      <td>75.5</td>
-      <td>141.5</td>
-      <td>1.780356e+02</td>
-    </tr>
-    <tr>
-      <th>3034</th>
-      <td>66.5</td>
-      <td>72.5</td>
-      <td>1.972377e+03</td>
-    </tr>
-    <tr>
-      <th>7488</th>
-      <td>48.5</td>
-      <td>-113.5</td>
-      <td>9.566622e+03</td>
-    </tr>
-    <tr>
-      <th>10740</th>
-      <td>32.5</td>
-      <td>116.5</td>
-      <td>4.994749e+06</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+| index | lat  | lng    | population   |
+|-------|------|--------|--------------|
+| 6506  | 53.5 | 124.5  | 9.351563e+03 |
+| 1035  | 75.5 | 141.5  | 1.780356e+02 |
+| 3034  | 66.5 | 72.5   | 1.972377e+03 |
+| 7488  | 48.5 | -113.5 | 9.566622e+03 |
+| 10740 | 32.5 | 116.5  | 4.994749e+06 |
 
 
 Add lat lng values in web mercator:
@@ -234,71 +196,13 @@ output_dataframe['lat_3857'] = lat_3857
 output_dataframe.sample(frac=1.).head()
 ```
 
-
-
-
-<div>
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>lat</th>
-      <th>lng</th>
-      <th>population</th>
-      <th>lng_3857</th>
-      <th>lat_3857</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>11941</th>
-      <td>25.5</td>
-      <td>124.5</td>
-      <td>2.870859e+01</td>
-      <td>1.385928e+07</td>
-      <td>2.937284e+06</td>
-    </tr>
-    <tr>
-      <th>17692</th>
-      <td>-22.5</td>
-      <td>117.5</td>
-      <td>4.557170e+03</td>
-      <td>1.308004e+07</td>
-      <td>-2.571663e+06</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>82.5</td>
-      <td>-77.5</td>
-      <td>3.311810e-02</td>
-      <td>-8.627261e+06</td>
-      <td>1.738069e+07</td>
-    </tr>
-    <tr>
-      <th>9618</th>
-      <td>38.5</td>
-      <td>46.5</td>
-      <td>1.455383e+06</td>
-      <td>5.176356e+06</td>
-      <td>4.650302e+06</td>
-    </tr>
-    <tr>
-      <th>16594</th>
-      <td>-12.5</td>
-      <td>122.5</td>
-      <td>1.345766e-03</td>
-      <td>1.363664e+07</td>
-      <td>-1.402665e+06</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-  </div>
-
-
+| index | lat   | lng   | population   | lng_3857      | lat_3857      |
+|-------|-------|-------|--------------|---------------|---------------|
+| 11941 | 25.5  | 124.5 | 2.870859e+01 | 1.385928e+07  | 2.937284e+06  |
+| 17692 | -22.5 | 117.5 | 4.557170e+03 | 1.308004e+07  | -2.571663e+06 |
+| 44    | 82.5  | -77.5 | 3.311810e-02 | -8.627261e+06 | 1.738069e+07  |
+| 9618  | 38.5  | 46.5  | 1.455383e+06 | 5.176356e+06  | 4.650302e+06  |
+| 16594 | -12.5 | 122.5 | 1.345766e-03 | 1.363664e+07  | -1.402665e+06 
 
 
 
