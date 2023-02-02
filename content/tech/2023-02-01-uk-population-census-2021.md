@@ -47,68 +47,13 @@ population_oa = pd.read_csv('data/uk-census-2021-oa.csv')
 population_oa.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>Output Areas</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>26268.7</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>E00000003</td>
-      <td>60952.4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>E00000005</td>
-      <td>12873.6</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>E00000007</td>
-      <td>1959.2</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>E00000010</td>
-      <td>71200.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
+|Output Areas Code | Output Areas | Observation |
+|-------------------------|--------------|
+| E00000001    | E00000001   | 26268.7 |
+| E00000003    | E00000003   | 60952.4 |
+| E00000005    | E00000005   | 12873.6 |
+| E00000007    | E00000007   | 1959.2  |
+| E00000010    | E00000010   | 71200.0 |
 
 ### Geographic manipulation-- OA boundaries to cells
 
@@ -124,85 +69,13 @@ boundaries = gpd.read_file('data/Output_Areas_(Dec_2021)_Boundaries_Generalised_
 boundaries.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>OBJECTID</th>
-      <th>OA21CD</th>
-      <th>GlobalID</th>
-      <th>Shape__Are</th>
-      <th>Shape__Len</th>
-      <th>geometry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>E00000001</td>
-      <td>bc5eb21b-d42b-4715-a771-2c27575a08f0</td>
-      <td>6949.151482</td>
-      <td>421.166161</td>
-      <td>POLYGON ((532303.492 181814.110, 532213.378 18...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>E00000003</td>
-      <td>a1a2b34f-320e-4bb8-acb4-7ca7ca16ef9c</td>
-      <td>4492.411072</td>
-      <td>307.714653</td>
-      <td>POLYGON ((532213.378 181846.192, 532190.539 18...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>E00000005</td>
-      <td>9337da1a-fe0f-4210-9c95-ed2d20fd6287</td>
-      <td>8565.514214</td>
-      <td>385.204781</td>
-      <td>POLYGON ((532180.131 181763.020, 532219.161 18...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>E00000007</td>
-      <td>b336e11f-af26-48a6-ac67-44f5b8b8840a</td>
-      <td>75994.829704</td>
-      <td>1408.607657</td>
-      <td>POLYGON ((532201.292 181668.180, 532267.728 18...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>E00000010</td>
-      <td>ca8f9874-cdf5-4c1a-9d39-f74a410dae44</td>
-      <td>2102.876602</td>
-      <td>215.271975</td>
-      <td>POLYGON ((532127.958 182133.192, 532089.264 18...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+| OBJECTID | OA21CD | GlobalID  | Shape__Are                           | Shape__Len   | geometry    |
+|----------|--------|-----------|--------------------------------------|--------------|-------------|
+| 1      | E00000001 | bc5eb21b-d42b-4715-a771-2c27575a08f0 | 6949.151482  | 421.166161  | POLYGON ((532303.492 181814.110, 532213.378 18... |
+| 2      | E00000003 | a1a2b34f-320e-4bb8-acb4-7ca7ca16ef9c | 4492.411072  | 307.714653  | POLYGON ((532213.378 181846.192, 532190.539 18... |
+| 3      | E00000005 | 9337da1a-fe0f-4210-9c95-ed2d20fd6287 | 8565.514214  | 385.204781  | POLYGON ((532180.131 181763.020, 532219.161 18... |
+| 4      | E00000007 | b336e11f-af26-48a6-ac67-44f5b8b8840a | 75994.829704 | 1408.607657 | POLYGON ((532201.292 181668.180, 532267.728 18... |
+| 5      | E00000010 | ca8f9874-cdf5-4c1a-9d39-f74a410dae44 | 2102.876602  | 215.271975  | POLYGON ((532127.958 182133.192, 532089.264 18... |
 
 
 In the boundaries geodataframe, the columns we'll need is that 'OA21CD', 'Shape_Are' and 'geometry columns': 'OA21CD' can join to the population dataset from above, Shape__Are gives the area of the OA in m^2 (note that this is different from the poulation measurement unit, which is in km^2). We can in fact cross check it against the geometry column
@@ -210,18 +83,11 @@ In the boundaries geodataframe, the columns we'll need is that 'OA21CD', 'Shape_
 
 ```python
 # check that the projection is indeed british national grid eastings and northings
-print(f"geodata has projection of {boundaries.crs}")
+print(f"geodata has projection of {boundaries.crs}") # this gives: epsg:27700
 # check that the geometry gives ~the same area as what shape_are gives to a 10m^2 tolerance
 assert ((boundaries.area.astype(int)- boundaries.Shape__Are.astype(int)).abs() < 10).sum() == len(boundaries)
 ```
 
-    geodata has projection of epsg:27700
-
-
-
-```python
-
-```
 
 Since we are only interested in Greater London, we can filter out rows from the boundaries dataframe that are outside of the london bounding box.
 
@@ -232,21 +98,18 @@ We can get the bounding box of london using the OSM query https://nominatim.open
 ldn_bounding_box = Polygon.from_bounds( -0.5103751, 51.2867602,0.3340155, 51.691874 )
 ldn_bounding_box = gpd.GeoSeries([ldn_bounding_box], crs='epsg:4326').to_crs(boundaries.crs)
 ldn_bounding_box.geometry
+
+```
+
+```
+    0    POLYGON ((503976.311 155234.131, 503059.759 20...
+    dtype: geometry
 ```
 
 
+### Convert the geodataframe into a grid for downstream tasks
 
-
-    0    POLYGON ((503976.311 155234.131, 503059.759 20...
-    dtype: geometry
-
-
-
-Convert the geodataframe into a grid for downstream tasks-- Ordnance survey actually has a file of british grids at various resolutions prebuilt (https://github.com/OrdnanceSurvey/OS-British-National-Grids), -- the smallest is 1km by 1km, so we will construct our own 100m x 100m grid for london (We can do it for the whole uk, but we will have to iterate through the dataset as the number of cells will become very large)
-
-
----
-
+Ordnance survey actually has a file of british grids at various resolutions prebuilt (https://github.com/OrdnanceSurvey/OS-British-National-Grids), -- the smallest is 1km by 1km, so we will construct our own 100m x 100m grid for london (We can do it for the whole uk, but we will have to iterate through the dataset as the number of cells will become very large)
 
 **diversion**
 
@@ -258,10 +121,7 @@ This demos how to use the grid gpkg file from OS-- the gpkg is a vector file wit
 list(fiona.listlayers('data/os_bng_grids.gpkg'))
 ```
 
-
-
-
-    ['100km_grid', '50km_grid', '20km_grid', '10km_grid', '5km_grid', '1km_grid']
+`['100km_grid', '50km_grid', '20km_grid', '10km_grid', '5km_grid', '1km_grid']`
 
 
 
@@ -272,80 +132,17 @@ bsng_grid_1km = gpd.read_file('data/os_bng_grids.gpkg', layer=layername)
 bsng_grid_1km.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>tile_name</th>
-      <th>geometry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>HL0000</td>
-      <td>POLYGON ((0.000 1200000.000, 1000.000 1200000....</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>HL0001</td>
-      <td>POLYGON ((0.000 1201000.000, 1000.000 1201000....</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>HL0002</td>
-      <td>POLYGON ((0.000 1202000.000, 1000.000 1202000....</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>HL0003</td>
-      <td>POLYGON ((0.000 1203000.000, 1000.000 1203000....</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>HL0004</td>
-      <td>POLYGON ((0.000 1204000.000, 1000.000 1204000....</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
+| tile_name | geometry |
+|-----------|----------|
+| HL0000   | POLYGON ((0.000 1200000.000, 1000.000 1200000.... |
+| HL0001   | POLYGON ((0.000 1201000.000, 1000.000 1201000.... |
+| HL0002   | POLYGON ((0.000 1202000.000, 1000.000 1202000.... |
+| HL0003   | POLYGON ((0.000 1203000.000, 1000.000 1203000.... |
+| HL0004   | POLYGON ((0.000 1204000.000, 1000.000 1204000.... |
 
 ---
 
 Back to our task, we filter out the OA that intersects the london bounding box:
-
-
-```python
-gpd.GeoDataFrame(ldn_bounding_box.reset_index()).geometry
-```
-
-
-
-
-    0    POLYGON ((503976.311 155234.131, 503059.759 20...
-    Name: 0, dtype: geometry
-
-
-
 
 
 
@@ -353,73 +150,19 @@ gpd.GeoDataFrame(ldn_bounding_box.reset_index()).geometry
 ldn_boundaries = boundaries[['OA21CD', 'geometry']].sjoin(gpd.GeoDataFrame(ldn_bounding_box.reset_index()), how='inner')[['OA21CD', 'geometry']]
 ldn_boundaries.head()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>OA21CD</th>
-      <th>geometry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>POLYGON ((532303.492 181814.110, 532213.378 18...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>POLYGON ((532213.378 181846.192, 532190.539 18...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>POLYGON ((532180.131 181763.020, 532219.161 18...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>POLYGON ((532201.292 181668.180, 532267.728 18...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>POLYGON ((532127.958 182133.192, 532089.264 18...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
+| OA21CD | geometry  |
+|--------|-----------|
+| E00000001 | POLYGON ((532303.492 181814.110, 532213.378 18... |
+| E00000003 | POLYGON ((532213.378 181846.192, 532190.539 18... |
+| E00000005 | POLYGON ((532180.131 181763.020, 532219.161 18... |
+| E00000007 | POLYGON ((532201.292 181668.180, 532267.728 18... |
+| E00000010 | POLYGON ((532127.958 182133.192, 532089.264 18... |
 
 ```python
 ldn_bounding_box.geometry[0].bounds
 ```
 
-
-
-
-    (503059.75944664044, 155234.13110756868, 562854.9611320551, 201813.5769950911)
+(503059.75944664044, 155234.13110756868, 562854.9611320551, 201813.5769950911)
 
 
 
@@ -444,8 +187,6 @@ for x, y, xmax, ymax in tqdm(zip (xcoor, ycoor, xcoor_max, ycoor_max), total=len
 grid = gpd.GeoDataFrame(data={'cellid': np.arange(len(polygons))},geometry=polygons, crs=boundaries.crs)
 ```
 
-    100%|████████████████████████████████| 279733/279733 [00:04<00:00, 65379.51it/s]
-
 
 Join the grid to the OA polygons to get the demographics info per grid cell
 
@@ -461,172 +202,6 @@ ldn_demographics_grid = grid.sjoin(boundaries)
     (30160, 2)
 
 
-
-```python
-ldn_demographics_grid
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>cellid</th>
-      <th>geometry</th>
-      <th>index_right</th>
-      <th>OBJECTID</th>
-      <th>OA21CD</th>
-      <th>GlobalID</th>
-      <th>Shape__Are</th>
-      <th>Shape__Len</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>POLYGON ((503000.000 155200.000, 503000.000 15...</td>
-      <td>147286</td>
-      <td>147287</td>
-      <td>E00155442</td>
-      <td>5c96e7ec-ecb5-458b-b6e3-3f170061650d</td>
-      <td>312112.652298</td>
-      <td>2691.258154</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>POLYGON ((503000.000 155300.000, 503000.000 15...</td>
-      <td>147286</td>
-      <td>147287</td>
-      <td>E00155442</td>
-      <td>5c96e7ec-ecb5-458b-b6e3-3f170061650d</td>
-      <td>312112.652298</td>
-      <td>2691.258154</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>POLYGON ((503000.000 155400.000, 503000.000 15...</td>
-      <td>147286</td>
-      <td>147287</td>
-      <td>E00155442</td>
-      <td>5c96e7ec-ecb5-458b-b6e3-3f170061650d</td>
-      <td>312112.652298</td>
-      <td>2691.258154</td>
-    </tr>
-    <tr>
-      <th>467</th>
-      <td>467</td>
-      <td>POLYGON ((503100.000 155200.000, 503100.000 15...</td>
-      <td>147286</td>
-      <td>147287</td>
-      <td>E00155442</td>
-      <td>5c96e7ec-ecb5-458b-b6e3-3f170061650d</td>
-      <td>312112.652298</td>
-      <td>2691.258154</td>
-    </tr>
-    <tr>
-      <th>468</th>
-      <td>468</td>
-      <td>POLYGON ((503100.000 155300.000, 503100.000 15...</td>
-      <td>147286</td>
-      <td>147287</td>
-      <td>E00155442</td>
-      <td>5c96e7ec-ecb5-458b-b6e3-3f170061650d</td>
-      <td>312112.652298</td>
-      <td>2691.258154</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>279671</th>
-      <td>279671</td>
-      <td>POLYGON ((562800.000 195700.000, 562800.000 19...</td>
-      <td>103204</td>
-      <td>103205</td>
-      <td>E00108990</td>
-      <td>53fb368c-3684-4be0-b859-93b09ea9fdd4</td>
-      <td>84283.686378</td>
-      <td>1503.476417</td>
-    </tr>
-    <tr>
-      <th>279672</th>
-      <td>279672</td>
-      <td>POLYGON ((562800.000 195800.000, 562800.000 19...</td>
-      <td>103204</td>
-      <td>103205</td>
-      <td>E00108990</td>
-      <td>53fb368c-3684-4be0-b859-93b09ea9fdd4</td>
-      <td>84283.686378</td>
-      <td>1503.476417</td>
-    </tr>
-    <tr>
-      <th>279673</th>
-      <td>279673</td>
-      <td>POLYGON ((562800.000 195900.000, 562800.000 19...</td>
-      <td>103204</td>
-      <td>103205</td>
-      <td>E00108990</td>
-      <td>53fb368c-3684-4be0-b859-93b09ea9fdd4</td>
-      <td>84283.686378</td>
-      <td>1503.476417</td>
-    </tr>
-    <tr>
-      <th>279674</th>
-      <td>279674</td>
-      <td>POLYGON ((562800.000 196000.000, 562800.000 19...</td>
-      <td>103204</td>
-      <td>103205</td>
-      <td>E00108990</td>
-      <td>53fb368c-3684-4be0-b859-93b09ea9fdd4</td>
-      <td>84283.686378</td>
-      <td>1503.476417</td>
-    </tr>
-    <tr>
-      <th>279675</th>
-      <td>279675</td>
-      <td>POLYGON ((562800.000 196100.000, 562800.000 19...</td>
-      <td>103204</td>
-      <td>103205</td>
-      <td>E00108990</td>
-      <td>53fb368c-3684-4be0-b859-93b09ea9fdd4</td>
-      <td>84283.686378</td>
-      <td>1503.476417</td>
-    </tr>
-  </tbody>
-</table>
-<p>536587 rows × 8 columns</p>
-</div>
-
-
-
-
 ```python
 # as we can see, the OA size span is quite large --luckily most OA are larger than a grid cell. 
 ax =ldn_demographics_grid.drop_duplicates(subset='OA21CD').Shape__Are.apply(np.log10).hist(bins = 100)
@@ -635,14 +210,6 @@ ax.set_ylabel('number of OA')
 ax.vlines(4,0,1800, colors='b', label='10,000 m^2 (Size of cell)')
 ax.legend()
 ```
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f8b0b33e680>
-
-
-
 
     
 ![png](/2023-02-01-uk-population-census-2021/output_26_1.png)
@@ -678,80 +245,13 @@ houshold = pd.read_csv('data/household_size_output_area_census2021.csv')
 houshold.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>Output Areas</th>
-      <th>Household size (9 categories) Code</th>
-      <th>Household size (9 categories)</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>0</td>
-      <td>0 people in household</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>1</td>
-      <td>1 person in household</td>
-      <td>34</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>2</td>
-      <td>2 people in household</td>
-      <td>44</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>3</td>
-      <td>3 people in household</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>4</td>
-      <td>4 people in household</td>
-      <td>6</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
+| Output Areas Code | Output Areas | Household size (9 categories) Code | Household size (9 categories) | Observation           |
+|-------------------|--------------|------------------------------------|-------------------------------|-----------------------|
+| E00000001    | E00000001                          | 0                             | 0 people in household | 0  |
+| E00000001    | E00000001                          | 1                             | 1 person in household | 34 |
+| E00000001    | E00000001                          | 2                             | 2 people in household | 44 |
+| E00000001    | E00000001                          | 3                             | 3 people in household | 10 |
+| E00000001    | E00000001                          | 4                             | 4 people in household | 6  |
 
 We can use the 'code' as a proxy for household size
 
@@ -759,84 +259,16 @@ We can use the 'code' as a proxy for household size
 ```python
 houshold[['Household size (9 categories)', 'Household size (9 categories) Code']].drop_duplicates()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Household size (9 categories)</th>
-      <th>Household size (9 categories) Code</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0 people in household</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1 person in household</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2 people in household</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3 people in household</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4 people in household</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5 people in household</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>6 people in household</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>7 people in household</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>8 or more people in household</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
+| Household size (9 categories) | Household size (9 categories) Code |
+|-------------------------------|------------------------------------|
+| 0 people in household              | 0 |
+| 1 person in household              | 1 |
+| 2 people in household              | 2 |
+| 3 people in household              | 3 |
+| 4 people in household              | 4 |
+| 5 people in household              | 5 |
+| 6 people in household              | 6 |
+| 7 people in household              | 7 |
 
 ```python
 mean_household_size = houshold[['Output Areas Code', 'Household size (9 categories) Code','Observation']]
@@ -845,512 +277,57 @@ mean_household_size = mean_household_size.groupby('Output Areas Code')['counts']
 mean_household_size_totals = houshold[['Output Areas Code', 'Household size (9 categories) Code','Observation']].groupby('Output Areas Code')['Observation'].sum()
 ```
 
-    /tmp/ipykernel_28838/2961719914.py:2: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      mean_household_size['counts'] = mean_household_size['Household size (9 categories) Code'] * mean_household_size['Observation']
-
-
-
-```python
-mean_household_size.reset_index()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>counts</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>176</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>256</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>145</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>173</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>188875</th>
-      <td>W00010693</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <th>188876</th>
-      <td>W00010694</td>
-      <td>404</td>
-    </tr>
-    <tr>
-      <th>188877</th>
-      <td>W00010695</td>
-      <td>189</td>
-    </tr>
-    <tr>
-      <th>188878</th>
-      <td>W00010696</td>
-      <td>237</td>
-    </tr>
-    <tr>
-      <th>188879</th>
-      <td>W00010697</td>
-      <td>272</td>
-    </tr>
-  </tbody>
-</table>
-<p>188880 rows × 2 columns</p>
-</div>
-
-
-
-
 ```python
 mean_household_size = mean_household_size.reset_index().merge(mean_household_size_totals.reset_index(), on='Output Areas Code')
 mean_household_size['avg_household_size'] = mean_household_size['counts'] /  mean_household_size['Observation']
 mean_household_size.head()
 ```
+| Output Areas Code | counts    | Observation | avg_household_size |
+|-------------------|-----------|-------------|--------------------|
+| E00000001 | 176         | 94                 | 1.872340 |
+| E00000003 | 256         | 109                | 2.348624 |
+| E00000005 | 112         | 63                 | 1.777778 |
+| E00000007 | 145         | 87                 | 1.666667 |
+| E00000010 | 173         | 125                | 1.384000 |
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>counts</th>
-      <th>Observation</th>
-      <th>avg_household_size</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>176</td>
-      <td>94</td>
-      <td>1.872340</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>256</td>
-      <td>109</td>
-      <td>2.348624</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>112</td>
-      <td>63</td>
-      <td>1.777778</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>145</td>
-      <td>87</td>
-      <td>1.666667</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>173</td>
-      <td>125</td>
-      <td>1.384000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-
-```
 
 #### gender
 
 
 ```python
 gender = pd.read_csv('data/uk-census-2021-sex-oa.csv')
-gender.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>Output Areas</th>
-      <th>Sex (2 categories) Code</th>
-      <th>Sex (2 categories)</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>1</td>
-      <td>Female</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>2</td>
-      <td>Male</td>
-      <td>101</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000003</td>
-      <td>E00000003</td>
-      <td>1</td>
-      <td>Female</td>
-      <td>123</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000003</td>
-      <td>E00000003</td>
-      <td>2</td>
-      <td>Male</td>
-      <td>135</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000005</td>
-      <td>E00000005</td>
-      <td>1</td>
-      <td>Female</td>
-      <td>52</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
 females = gender[gender['Sex (2 categories)'] == 'Female']
 gender_total = gender.groupby(['Output Areas Code'])['Observation'].sum().reset_index()
 percent_female = females[['Output Areas', 'Observation']].merge(gender_total, left_on='Output Areas', right_on='Output Areas Code')
 percent_female['pct'] = percent_female['Observation_x'] / percent_female['Observation_y']
 percent_female.head()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas</th>
-      <th>Observation_x</th>
-      <th>Output Areas Code</th>
-      <th>Observation_y</th>
-      <th>pct</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>75</td>
-      <td>E00000001</td>
-      <td>176</td>
-      <td>0.426136</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>123</td>
-      <td>E00000003</td>
-      <td>258</td>
-      <td>0.476744</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>52</td>
-      <td>E00000005</td>
-      <td>112</td>
-      <td>0.464286</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>67</td>
-      <td>E00000007</td>
-      <td>144</td>
-      <td>0.465278</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>71</td>
-      <td>E00000010</td>
-      <td>178</td>
-      <td>0.398876</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
+| Output Areas | Observation_x | Output Areas Code | Observation_y | pct |
+|--------------|---------------|-------------------|---------------|-----|
+| E00000001     | 75                | E00000001     | 176 | 0.426136 |
+| E00000003     | 123               | E00000003     | 258 | 0.476744 |
+| E00000005     | 52                | E00000005     | 112 | 0.464286 |
+| E00000007     | 67                | E00000007     | 144 | 0.465278 |
+| E00000010     | 71                | E00000010     | 178 | 0.398876 |
 
 #### education
 
 
 ```python
 education = pd.read_csv('data/uk-census-2021-education-oa.csv')
-education.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>Output Areas</th>
-      <th>Highest level of qualification (8 categories) Code</th>
-      <th>Highest level of qualification (8 categories)</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>-8</td>
-      <td>Does not apply</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>0</td>
-      <td>No qualifications</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>1</td>
-      <td>Level 1 and entry level qualifications: 1 to 4...</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>2</td>
-      <td>Level 2 qualifications: 5 or more GCSEs (A* to...</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000001</td>
-      <td>E00000001</td>
-      <td>3</td>
-      <td>Apprenticeship</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
 education[['Highest level of qualification (8 categories) Code','Highest level of qualification (8 categories)'	]].drop_duplicates()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Highest level of qualification (8 categories) Code</th>
-      <th>Highest level of qualification (8 categories)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>-8</td>
-      <td>Does not apply</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>No qualifications</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1</td>
-      <td>Level 1 and entry level qualifications: 1 to 4...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2</td>
-      <td>Level 2 qualifications: 5 or more GCSEs (A* to...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>3</td>
-      <td>Apprenticeship</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>4</td>
-      <td>Level 3 qualifications: 2 or more A levels or ...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>5</td>
-      <td>Level 4 qualifications and above: degree (BA, ...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>6</td>
-      <td>Other: vocational or work-related qualificatio...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+| Highest level of qualification (8 categories) Code | Highest level of qualification (8 categories) |
+|----------------------------------------------------|-----------------------------------------------|
+| -8                                            | Does not apply                                    |
+| 0                                             | No qualifications                                 |
+| 1                                             | Level 1 and entry level qualifications: 1 to 4... |
+| 2                                             | Level 2 qualifications: 5 or more GCSEs (A* to... |
+| 3                                             | Apprenticeship                                    |
+| 4                                             | Level 3 qualifications: 2 or more A levels or ... |
+| 5                                             | Level 4 qualifications and above: degree (BA, ... |
 
 
 
@@ -1366,84 +343,18 @@ mean_education_level = mean_education_level.reset_index().merge(mean_education_l
 mean_education_level['avg_education_level'] = mean_education_level['counts'] /  mean_education_level['Observation']
 mean_education_level.head()
 ```
-
-    /tmp/ipykernel_28838/566605148.py:2: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      mean_education_level['counts'] = mean_education_level['Highest level of qualification (8 categories) Code'].clip(lower=0) * mean_education_level['Observation']
-
-
+| Output Areas Code | counts    | Observation | avg_education_level |
+|-------------------|-----------|-------------|---------------------|
+| E00000001 | 714         | 175                 | 4.080000 |
+| E00000003 | 1022        | 257                 | 3.976654 |
+| E00000005 | 485         | 113                 | 4.292035 |
+| E00000007 | 640         | 144                 | 4.444444 |
+| E00000010 | 656         | 179                 | 3.664804 |
 
 
+### Joining all info together
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output Areas Code</th>
-      <th>counts</th>
-      <th>Observation</th>
-      <th>avg_education_level</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>E00000001</td>
-      <td>714</td>
-      <td>175</td>
-      <td>4.080000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E00000003</td>
-      <td>1022</td>
-      <td>257</td>
-      <td>3.976654</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>E00000005</td>
-      <td>485</td>
-      <td>113</td>
-      <td>4.292035</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>E00000007</td>
-      <td>640</td>
-      <td>144</td>
-      <td>4.444444</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E00000010</td>
-      <td>656</td>
-      <td>179</td>
-      <td>3.664804</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
+Finally, we can join the demograhics data onto the geomtry to get gridded demographics data
 
 ```python
 # add education level info
@@ -1461,109 +372,7 @@ ldn_demographics_grid_processed = ldn_demographics_grid_processed.merge(populati
     'Output Areas Code', 'Observation']], left_on='OA21CD', right_on='Output Areas Code').drop(columns='Output Areas Code').rename(
     columns={'Observation': 'pop_density'})
 ldn_demographics_grid_processed['popoulation'] = ldn_demographics_grid_processed['pop_density'] * (100 * 100)/(1000 * 1000)
-ldn_demographics_grid_processed.head()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>cellid</th>
-      <th>OA21CD</th>
-      <th>geometry</th>
-      <th>avg_education_level</th>
-      <th>pct_females</th>
-      <th>avg_household_size</th>
-      <th>pop_density</th>
-      <th>popoulation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>E00155442</td>
-      <td>POLYGON ((503000.000 155200.000, 503000.000 15...</td>
-      <td>2.839161</td>
-      <td>0.522807</td>
-      <td>2.567568</td>
-      <td>915.5</td>
-      <td>9.155</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>E00155442</td>
-      <td>POLYGON ((503000.000 155300.000, 503000.000 15...</td>
-      <td>2.839161</td>
-      <td>0.522807</td>
-      <td>2.567568</td>
-      <td>915.5</td>
-      <td>9.155</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>E00155442</td>
-      <td>POLYGON ((503000.000 155400.000, 503000.000 15...</td>
-      <td>2.839161</td>
-      <td>0.522807</td>
-      <td>2.567568</td>
-      <td>915.5</td>
-      <td>9.155</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>467</td>
-      <td>E00155442</td>
-      <td>POLYGON ((503100.000 155200.000, 503100.000 15...</td>
-      <td>2.839161</td>
-      <td>0.522807</td>
-      <td>2.567568</td>
-      <td>915.5</td>
-      <td>9.155</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>468</td>
-      <td>E00155442</td>
-      <td>POLYGON ((503100.000 155300.000, 503100.000 15...</td>
-      <td>2.839161</td>
-      <td>0.522807</td>
-      <td>2.567568</td>
-      <td>915.5</td>
-      <td>9.155</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-ldn_demographics_grid_processed.to_file('data/ldn_demographics_grid_processed.shp')
-```
-
-    /tmp/ipykernel_28838/324827064.py:1: UserWarning: Column names longer than 10 characters will be truncated when saved to ESRI Shapefile.
-      ldn_demographics_grid_processed.to_file('data/ldn_demographics_grid_processed.shp')
 
 
 ### Rasterizing geodataframe
@@ -1576,25 +385,15 @@ The population values have a fairly long tail-- let's cap this so it is easier t
 
 
 ```python
-# printing out some stats -- we can see 95% cells have < 150 people
 
-ldn_demographics_grid_processed['popoulation'].quantile([0.2, 0.4, 0.6, 0.8]),ldn_demographics_grid_processed['popoulation'].quantile([0.05]),  ldn_demographics_grid_processed['popoulation'].quantile([0.95]), ldn_demographics_grid_processed['popoulation'].min(), ldn_demographics_grid_processed['popoulation'].max()
+ldn_demographics_grid_processed['popoulation'].quantile([0.95])
 ```
 
-
-
-
-    (0.2     1.024
-     0.4     4.157
-     0.6    21.138
-     0.8    62.500
-     Name: popoulation, dtype: float64,
-     0.05    0.321
+We can see 95% cells have < 150 people
+```
      Name: popoulation, dtype: float64,
      0.95    130.5817
-     Name: popoulation, dtype: float64,
-     0.156,
-     2393.333)
+```
 
 
 
@@ -1604,18 +403,7 @@ ldn_demographics_grid_processed['popoulation'] = ldn_demographics_grid_processed
 ```
 
 
-```python
-ldn_demographics_grid_processed['popoulation'].max()
-```
-
-
-
-
-    150.0
-
-
-
-Now we convert the vector to raster (the resolution is what we are using for each of our cells-- 100m )
+Now we convert the vector to raster (the resolution we are passing to geocube is what we are using for each of our cells-- 100m )
 
 
 ```python
@@ -1627,20 +415,12 @@ ldn_demographics_raster = make_geocube(
 
 ```
 
+We can also plot our rasters (always a nice sanity check)
 
 ```python
 ldn_demographics_raster['popoulation'].plot()
 ```
-
-
-
-
-    <matplotlib.collections.QuadMesh at 0x7f8adde759c0>
-
-
-
-
-    
+   
 ![png](/2023-02-01-uk-population-census-2021/output_56_1.png)
     
 
@@ -1649,16 +429,7 @@ ldn_demographics_raster['popoulation'].plot()
 ```python
 ldn_demographics_raster['pct_females'].plot()
 ```
-
-
-
-
-    <matplotlib.collections.QuadMesh at 0x7f8b0c795db0>
-
-
-
-
-    
+  
 ![png](/2023-02-01-uk-population-census-2021/output_57_1.png)
     
 
@@ -1667,15 +438,6 @@ ldn_demographics_raster['pct_females'].plot()
 ```python
 ldn_demographics_raster['avg_education_level'].plot()
 ```
-
-
-
-
-    <matplotlib.collections.QuadMesh at 0x7f8b0d76e2f0>
-
-
-
-
     
 ![png](/2023-02-01-uk-population-census-2021/output_58_1.png)
     
@@ -1687,7 +449,3 @@ ldn_demographics_raster['avg_education_level'].plot()
 ldn_demographics_raster.rio.to_raster("data/ldn_demographics_raster.tiff")
 ```
 
-
-```python
-
-```
