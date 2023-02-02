@@ -1,6 +1,6 @@
 ---
 title: "Processing UK 2021 census open data with python tools"
-date: 2023-01-14T18:54:32Z
+date: 2023-02-01T18:54:32Z
 draft: false
 tags: ["python", "geospatial", "census"]
 ---
