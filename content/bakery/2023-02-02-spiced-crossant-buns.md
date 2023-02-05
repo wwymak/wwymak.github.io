@@ -2,12 +2,17 @@
 title: "Spiced croissant buns"
 date: 2023-02-02T10:32:06Z
 draft: false
+tags: ["bread", "croissant", "sundayafternoonbakingclub"]
 ---
-
+<!-- 
 ![jpg](/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-1.jpg)
 ![jpg](/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-2.jpg)
-![jpg](/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-3.jpg)|
+![jpg](/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-3.jpg) -->
 
+
+{{< figure src="/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-1.jpg" width="30%">}}
+{{< figure src="/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-2.jpg" width="30%">}}
+{{< figure src="/2023-02-02-spiced-crossant-buns/2023-02-02-spiced-crossaint-buns-3.jpg" width="30%">}}
 
 This is my first time making laminated bread-- the [recipe](https://kitchenprojects.substack.com/p/hot-croissant-buns) goes along the lines of: 
 1. Mix ingredients (flour, yeast, butter, milk), first proof at room temp -- much like normal bread, except for the extra butter

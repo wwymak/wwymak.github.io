@@ -2,6 +2,7 @@
 title: "Chinese Peanut Cookies"
 date: 2023-01-22T19:32:06Z
 draft: false
+tags: ["cookies", "peanut butter",  "sundayafternoonbakingclub"]
 ---
 
 ![jpg](/2023-01-22-chinese-peanut-cookies_files/peanut_cookies.jpg)

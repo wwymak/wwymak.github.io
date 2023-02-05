@@ -2,6 +2,7 @@
 title: "Olive and sun dried tomato sourdough focaccia"
 date: 2023-01-06T18:32:06Z
 draft: false
+tags: ["sourdough", "bread", "focaccia", "sundayafternoonbakingclub"]
 ---
 
 ![jpg](/2023-01-06-olive-sundried-tomato-sourdough-focaccia/focaccia.jpg)
